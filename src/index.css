@@ -4,6 +4,26 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  width: 10px;
+  height: 6px;
+  border-radius: 8px;
+  background: #eaeaea;
+}
+
+body::-webkit-scrollbar-track {
+  background: #eaeaea;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #6a737b;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
@@ -90,6 +110,7 @@
     -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -101,11 +122,13 @@
     -webkit-transform: translateX(100px);
     transform: translateX(100px);
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
   }
 }
+
 .close {
   -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -117,6 +140,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -131,6 +155,7 @@
     transform: translateX(0);
     opacity: 1;
   }
+
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
@@ -138,6 +163,7 @@
     display: none;
   }
 }
+
 .hover-text:hover {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
