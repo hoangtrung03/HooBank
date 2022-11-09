@@ -2,8 +2,15 @@ import React from 'react'
 import { useState } from 'react'
 import { close, logo, menu } from '../assets'
 import { navLinks } from '../constants/index'
+import { useTranslation } from 'react-i18next'
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
+  const { t, i18n } = useTranslation()
+  const [language, setLanguage] = useState('Eng')
+  const lngs = {
+    en: { nativeName: 'Eng' },
+    vi: { nativeName: 'Vie' }
+  }
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <a href="/">
@@ -25,6 +32,49 @@ const Navbar = () => {
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>
         ))}
+        <li
+          className={`font-poppins font-normal cursor-pointer text-[16px] text-white ml-10`}
+        >
+          <div class="dropdown inline-block relative">
+            <button class="rounded inline-flex items-center hover-text">
+              <span class="mr-1">{language}</span>
+              <svg
+                class="fill-current h-4 w-8"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+              >
+                <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{' '}
+              </svg>
+            </button>
+            <ul class="dropdown-menu absolute hidden pt-2">
+              <li
+                class="hover-text"
+                onClick={() => {
+                  i18n.changeLanguage('en')
+                  setLanguage(lngs.en.nativeName)
+                }}
+              >
+                <a
+                  class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                  href="#"
+                >
+                  {lngs.en.nativeName}
+                </a>
+              </li>
+              <li
+                class="hover-text"
+                onClick={() => {
+                  i18n.changeLanguage('vi')
+                  setLanguage(lngs.vi.nativeName)
+                }}
+              >
+                <a class="py-2 px-4 block whitespace-no-wrap" href="#">
+                  {lngs.vi.nativeName}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
       </ul>
       <div className="sm:hidden flex flex-1 justify-end items-center">
         <img

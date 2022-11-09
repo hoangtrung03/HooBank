@@ -2,7 +2,9 @@ import React from 'react'
 import styles from '../style'
 import { discount, robot } from '../assets'
 import GetStarted from './GetStarted'
+import { useTranslation } from 'react-i18next'
 const Hero = () => {
+  const { t, i18n } = useTranslation()
   return (
     <section
       id="home"
@@ -19,8 +21,8 @@ const Hero = () => {
             className="w-[32px] h-[32px]"
           />
           <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">20$</span> Discount for{' '}
-            <span className="text-white">1 Month</span> Account
+            <span className="text-white">20$</span> {t("heroes.discount")}{' '}
+            <span className="text-white">1 {t("heroes.month")}</span> {t("heroes.account")}
           </p>
         </div>
         <div className="flex flex-row justify-between items-center w-full">
