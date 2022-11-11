@@ -46,7 +46,7 @@ const Navbar = () => {
                 <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />{' '}
               </svg>
             </button>
-            <ul class="dropdown-menu absolute hidden pt-2">
+            <ul class="dropdown-menu absolute hidden p-5 bg-indigo-200 rounded">
               <li
                 class="hover-text"
                 onClick={() => {
@@ -55,20 +55,23 @@ const Navbar = () => {
                 }}
               >
                 <a
-                  class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                  class="rounded-t py-2 px-4 block whitespace-no-wrap text-black"
                   href="#"
                 >
                   {lngs.en.nativeName}
                 </a>
               </li>
               <li
-                class="hover-text"
+                class="hover:"
                 onClick={() => {
                   i18n.changeLanguage('vi')
                   setLanguage(lngs.vi.nativeName)
                 }}
               >
-                <a class="py-2 px-4 block whitespace-no-wrap" href="#">
+                <a
+                  class="py-2 px-4 block whitespace-no-wrap text-black"
+                  href="#"
+                >
                   {lngs.vi.nativeName}
                 </a>
               </li>

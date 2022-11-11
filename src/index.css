@@ -215,3 +215,14 @@ body::-webkit-scrollbar-thumb:hover {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+.scrollTop {
+  position: fixed;
+   right: 10px;
+   bottom: 60px;
+   height: 20px;
+   font-size: 3rem;
+   z-index: 100;
+   cursor: pointer;
+   color: #ffffff;
+}
