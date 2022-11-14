@@ -1,6 +1,6 @@
-import { card } from "../assets";
-import styles, { layout } from "../style";
-import Button from "./Button";
+import { card } from '../assets'
+import styles, { layout } from '../style'
+import Button from './Button'
 
 const CardDeal = () => (
   <section className={layout.section}>
@@ -21,6 +21,6 @@ const CardDeal = () => (
       <img src={card} alt="billing" className="w-[100%] h-[100%]" />
     </div>
   </section>
-);
+)
 
-export default CardDeal;
+export default CardDeal

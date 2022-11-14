@@ -2,8 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
-import { I18nextProvider } from 'react-i18next';
-import i18n from 'i18next';
+import { I18nextProvider } from 'react-i18next'
+import i18n from 'i18next'
 import vi from './assets/i18n/vi.json'
 import en from './assets/i18n/en.json'
 const root = ReactDOM.createRoot(document.getElementById('root'))

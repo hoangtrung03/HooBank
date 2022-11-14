@@ -218,11 +218,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 .scrollTop {
   position: fixed;
-   right: 10px;
-   bottom: 60px;
-   height: 20px;
-   font-size: 3rem;
-   z-index: 100;
-   cursor: pointer;
-   color: #ffffff;
+  right: 10px;
+  bottom: 60px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 100;
+  cursor: pointer;
+  color: #ffffff;
 }

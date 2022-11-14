@@ -38,7 +38,7 @@ function App() {
           </Routes>
         </>
       </Router>
-      <div className='scrollTop'>
+      <div className="scrollTop">
         <FaArrowCircleUp
           onClick={scrollToTop}
           style={{ display: visible ? 'inline' : 'none' }}

@@ -82,6 +82,54 @@ export const feedback = [
     name: 'Kenn Gallagher',
     title: 'Founder & Leader',
     img: people03
+  },
+  {
+    id: 'feedback-4',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
+  },
+  {
+    id: 'feedback-5',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
+  },
+  {
+    id: 'feedback-6',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
+  },
+  {
+    id: 'feedback-7',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
+  },
+  {
+    id: 'feedback-8',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
+  },
+  {
+    id: 'feedback-9',
+    content:
+      'It is usually people in the money business, finance, and international trade that are really rich.',
+    name: 'Kenn Gallagher',
+    title: 'Founder & Leader',
+    img: people03
   }
 ]
 
