@@ -34,15 +34,31 @@ const Testimonials = () => {
 
       <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
         <Swiper
-          slidesPerView={3}
           spaceBetween={40}
           pagination={{
             clickable: true
           }}
-          navigation={true}
+          // navigation={true}
           freeMode={true}
           modules={[Pagination, Navigation]}
           grabCursor={true}
+          loop={true}
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              width: 640,
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+              width: 768,
+              slidesPerView: 2,
+            },
+            992: {
+              width: 992,
+              slidesPerView: 3,
+            }
+          }}
           className="mySwiper"
         >
           {feedback.map(card => (

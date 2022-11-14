@@ -1,5 +1,5 @@
 import HomePage from './page/HomePage'
-import { FaArrowCircleUp } from 'react-icons/fa'
+import { IoMdArrowDropupCircle } from 'react-icons/io'
 import {
   BrowserRouter as Router,
   Routes,
@@ -39,7 +39,7 @@ function App() {
         </>
       </Router>
       <div className="scrollTop">
-        <FaArrowCircleUp
+        <IoMdArrowDropupCircle
           onClick={scrollToTop}
           style={{ display: visible ? 'inline' : 'none' }}
         />
